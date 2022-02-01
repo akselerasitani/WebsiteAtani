@@ -1,0 +1,52 @@
+.nav-masuk {
+    padding: 0;
+}
+
+.nav-tentang {
+    margin-left: 650px;
+}
+
+.berlangganan{
+    display: inline;
+}
+
+.nav-daftar {
+    margin-left: 5px;
+}
+
+.mengapa {
+    margin-top: 100px;
+}
+
+.produk {
+    margin-top: 70px;
+}
+
+.bottom {
+    color: #fff;
+}
+
+
+.judul-footer {
+    color: #F7DE06;
+}
+
+.link {
+    color: #fff;
+}
+
+
+.social-links {
+    font-size: 18px;
+    display: inline-block;
+    background-color: #499026;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
