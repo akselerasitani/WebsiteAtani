@@ -10,11 +10,8 @@
 
 <body>
 
-  {{-- NAVBAR --}}
-  {{-- NAVBAR --}}
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/index">
-          {{-- Logo ATANI --}}
           <div class="container">
             <div class="row">
               <div class="col-lg-2 mb-2" style="margin-left: 10px;">
@@ -22,7 +19,6 @@
               </div>
             </div>
           </div>
-          {{-- END OF LOGO --}}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,11 +32,11 @@
                 <a class="nav-link" style="color:#499026" href="#produk">Produk</a>
             </li>
             <li class="nav-manfaat" style="margin-right: 10px;">
-                <a class="nav-link" style="color:#499026" href="manfaat">Manfaat</a>
+                <a class="nav-link" style="color:#499026" href="#manfaat">Manfaat</a>
             </li>
 
             <li class="nav-masuk">
-                <button type="button" class="btn btn-outline-success" style="background-color: #fff;">Masuk</button>
+              <button type="button" class="btn btn-outline-success" style="background-color: #fff;">Masuk</button>
             </li>
             <li class="nav-daftar">
               <button type="button" class="btn" style="background-color:#499026; color:#fff">Daftar</button>
@@ -48,92 +44,110 @@
           </ul>
         </div>
     </nav>
-    {{-- AKHIR DARI NAVBAR --}}
 
-
-    {{-- MAIN CONTENT --}}
     <div class="content-1">
-        <img src="images/cabbage.png" width="1500" height="625" class="d-inline img-fluid" style="" alt="">
+      <div class="centered">
+        <h1 style="margin-top: 250px; color: #fff;"><b>Membangun Negeri<br>dari Hulu Agroindustri</b></h1>
+        <h5 style="margin-top: 20px; color: #fff">Distributor kebutuhan pertanian berbasis digital No. 1 di Indonesia . !</h5>
+        <button type="button" class="btn btn-outline-success" style="margin-top: 20px; background-color: #fff;">Gabung Sekarang</button>
+        <button type="button" class="btn btn-outline-light" style="margin-top: 20px;">Pelajari Lebih Lanjut</button>
+      </div>
     </div>
 
-    <div class="container mt-5">
-        <div class="row">
-          <div class="col">
-                <p style="color: #499026">TENTANG KAMI</p>
-                <h3>Memperkenalkan Anda Cara<br>Baru Dalam Berbisnis</h3>
-                <p>A-Tani merupakan sebuah platform digital yang<br>mengakomodir segala hal tentang pertanian dan perkebunan<br>dari hulu sampai ke hilir dengan berbagai layanan terbaik kami.</p>
-                <button type="button" class="btn btn-light" style="background-color: #499026; color: #fff">Pelajari Lebih Lanjut</button>
-          </div>
-          <div class="col">
-            <img src="images/tentang.png" width="500" height="400" class="d-inline" style="" alt="">
-          </div>
+    <div class="container" style="margin-top: 50px">
+      <div class="row">
+        <div class="col">
+          <p style="color: #499026">TENTANG KAMI</p>
+          <h3>Memperkenalkan Anda Cara<br>Baru Dalam Berbisnis</h3>
+          <p>A-Tani merupakan sebuah platform digital yang<br>mengakomodir segala hal tentang pertanian dan perkebunan<br>dari hulu sampai ke hilir dengan berbagai layanan terbaik kami.</p>
+          <button type="button" class="btn btn-light" style="background-color: #499026; color: #fff">Pelajari Lebih Lanjut</button>
         </div>
+        <div class="col">
+        <img src="images/tentang.png" width="500" height="400" class="d-inline" style="margin-left: 200px" alt="">
+        </div>
+      </div>
     </div>
 
     <div class="mengapa">
-        <h4 class="text-center" style="color: #499026">MENGAPA A-TANI?</h4>
-        <h5 class="text-center">“For Farmer For Nation”</h5>
-        <div class=" mt-5 p-2" style="background-color: #499026">
-            <div class="row">
-                <div class="col text-center">
-                    <img src="images/harga.png" width="150" height="160" class="d-inline" style="" alt="">
-                    <h6 style="color: #fff">Harga produk lebih stabil</h6>
-                    <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="col text-center">
-                    <img src="images/pembayaran.png" width="150" height="160" class="d-inline" style="" alt="">
-                    <h6 style="color: #fff">Pembayaran diakhir (Pay-Later)</h6>
-                    <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="col text-center">
-                    <img src="images/jaminan.png" width="150" height="160" class="d-inline" style="" alt="">
-                    <h6 style="color: #fff">Jaminan kualitas produk</h6>
-                    <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="col text-center">
-                    <img src="images/branding.png" width="150" height="160" class="d-inline" style="" alt="">
-                    <h6 style="color: #fff">Branding Toko Gratis</h6>
-                    <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-            </div>
-            <div class="button text-center mt-5 mb-2">
-                <button type="button" class="btn btn-warning" style="background-color: #F7DE06; color: #fff">GABUNG SEKARANG</button>
-            </div>
+      <h4 class="text-center" style="color: #499026">MENGAPA A-TANI?</h4>
+      <h5 class="text-center">“For Farmer For Nation”</h5>
+      <div class="mt-5 p-2" style="background-color: #499026">
+        <div class="row">
+          <div class="col text-center">
+            <img src="images/harga.png" width="150" height="160" class="d-inline" style="" alt="">
+            <h6 style="color: #fff">Harga produk lebih stabil</h6>
+            <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="col text-center">
+            <img src="images/pembayaran.png" width="150" height="160" class="d-inline" style="" alt="">
+            <h6 style="color: #fff">Pembayaran diakhir (Pay-Later)</h6>
+            <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="col text-center">
+            <img src="images/jaminan.png" width="150" height="160" class="d-inline" style="" alt="">
+            <h6 style="color: #fff">Jaminan kualitas produk</h6>
+            <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="col text-center">
+            <img src="images/branding.png" width="150" height="160" class="d-inline" style="" alt="">
+            <h6 style="color: #fff">Branding Toko Gratis</h6>
+            <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
         </div>
+        <div class="button text-center mt-5 mb-2">
+          <button type="button" class="btn btn-warning" style="background-color: #C0CA2F; color: #fff">GABUNG SEKARANG</button>
+        </div>
+      </div>
     </div>
 
     <div class="produk">
-        <h4 class="text-center" style="color: #499026">PRODUK KAMI</h4>
-        <p class="text-center">Kami menyediakan kebutuhan pertanian seperti bibit unggul, pupuk berkualitas dan obat-obatan<br>terbaik dari berbagai produsen ternama di Indonesia.</p>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="images/benih.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title">Bibit unggul</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="images/pupuk.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title">Pupuk berkualitas</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="images/obat-obatan.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title">Obat-obatan</p>
-                </div>
-              </div>
+      <h4 class="text-center" style="color: #499026">PRODUK KAMI</h4>
+      <p class="text-center">Kami menyediakan kebutuhan pertanian seperti bibit unggul, pupuk berkualitas dan obat-obatan<br>terbaik dari berbagai produsen ternama di Indonesia.</p>
+      <div class="card-group" style="margin-top: 50px">
+        <div class="card" style="width: 28rem">
+          <img src="images/benih.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Benih Unggul</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
+
+        <div class="card" style="width: 28rem">
+          <img src="images/pupuk.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pupuk Berkualitas</h5>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+        </div>
+
+        <div class="card" style="width: 28rem">
+          <img src="images/obat-obatan.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Obat-Obatan</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+      </div>
     </div>
 
-    
+    <div class="gabung">
+      <div class="row">
+        <div class="col">
+          <h4 style="margin-left: 100px; margin-top: 80px; color: #fff;">Anda kesulitan ketika ingin membeli produk?</h4>
+          <h4 style="margin-left: 100px; margin-top: 30px; color: #fff;">Produk di toko anda langka dan terbatas?</h4>
+          <h4 style="margin-left: 100px; margin-top: 30px; color: #fff;">Harga produk anda selama ini tidak stabil?<h4>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-warning" style="margin-left: 450px; margin-top: 130px; background-color: #C0CA2F; color: #fff">GABUNG SEKARANG</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimoni">
+      <h4 class="text-center" style="color: #499026">TESTIMONI MITRA A-TANI</h4>
+      <img src="images/testimoni.png" width="1500" height="434" class="d-inline" style="margin-top: 50px; margin-bottom: 50px" alt="">
+    </div>
+
     {{-- END OF MAIN CONTENT --}}
 
     {{-- FOOTER --}}
