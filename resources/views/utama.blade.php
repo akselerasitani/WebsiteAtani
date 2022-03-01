@@ -32,9 +32,9 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Tentang Kami</a></li>
+          <li><a class="nav-link scrollto active" href="#features">Tentang Kami</a></li>
+          <li><a class="nav-link scrollto " href="#servicess">Manfaat</a></li>
           <li><a class="nav-link scrollto" href="#services">Produk</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">manfaat</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -82,7 +82,7 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <section id="servicess" class="services">
         <div class="section-title" data-aos="fade-up">
           <h2>MENGAPA A-TANI</h2>
           <h5>“For Farmer For Nation”</h5>

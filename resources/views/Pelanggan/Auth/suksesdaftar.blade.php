@@ -9,11 +9,17 @@
 </head>
 
 <body>
-    <div class="card">
-        <img src="images/petani.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h4 class="card-title text-center" style="margin-top: 30px; color: #76AC5C">Terima kasih telah mendaftar di A-Tani!</h4>
-          <p class="card-text text-center" style="margin-top: 10px">Silahkan menunggu informasi lebih lanjut mengenai verifikasi status pendaftaran di e-mail yang sudah teregistrasi</p>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-8">
+                <div class="card " style="border-radius: 15px;">
+                  <img src="../images/petani.png" class="card-img-top" alt="..." style="border-radius: 15px 15px 0px 0px;">
+                  <div class="card-body">
+                    <h4 class="card-title text-center" style="margin-top: 30px; color: #76AC5C">Terima kasih telah mendaftar di A-Tani!</h4>
+                    <p class="card-text text-center" style="margin-top: 10px">Silahkan menunggu informasi lebih lanjut mengenai verifikasi status pendaftaran di e-mail yang sudah teregistrasi</p>
+                  </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

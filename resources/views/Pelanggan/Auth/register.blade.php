@@ -9,34 +9,38 @@
 </head>
 
 <body>
-    <div class="card">
-        <div class="card-body">
-            @csrf
-            <form method="POST" action="">
-                <h3 class="text-center" style="color: #76AC5C">Register</h3>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Nama Lengkap Pemilik Toko</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">E-mail Pemilik Toko</label>
-                  <input type="email" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">No Handphone</label>
-                    <input type="number" class="form-control" id="exampleInputPassword1">
-                </div>
-                <h6 class="text-center" style="margin-top: 20px">Atau daftar dengan</h6>
-                <div class="row">
-                    <div class="col-lg-2" style="margin-left: 250px">
-                        <div class="social-links mt-3">
-                            <a href="#" class="google-plus"><i class="fa fa-google text-dark"> Google</i></a>
-                        </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-8">
+                <div class="card " style="border-radius: 15px;">
+                    <div class="card-body">
+                        @csrf
+                        <form method="POST" action="">
+                            <h3 class="text-center" style="color: #76AC5C">Register</h3>
+                            <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nama Lengkap Pemilik Toko</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">E-mail Pemilik Toko</label>
+                            <input type="email" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">No Handphone</label>
+                                <input type="number" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <h6 class="text-center" style="margin-top: 20px">Atau daftar dengan</h6>
+                            <div class="d-flex justify-content-center align-items-center mt-4">
+                                <button type="button" class="btn " style="text-decoration: none; color: black; line-height: 20px"><i class="fa fa-google fa-2x"></i></button>
+                                <button type="button" class="btn " style="text-decoration: none; color: black; line-height: 20px"><i class="fa fa-facebook-square fa-2x"></i></button>
+                            </div>
+                            
+                            <p  class="text-center" style="margin-top: 20px">Sudah Mempunyai Akun? <a href="" style="text-decoration: none; color: black;"><b>Masuk</b></a></p>
+                        </form>
+                        <button type="submit" class="form-control" style="background-color: #76AC5C; color:white">Lanjutkan</button>
                     </div>
                 </div>
-                <p  class="text-center" style="margin-top: 20px">Sudah Mempunyai Akun? <a href="/masuk">Masuk</a></p>
-            </form>
-            <button type="submit" class="form-control" style="background-color: #76AC5C; color:white">Lanjutkan</button>
+            </div>
         </div>
     </div>
 </body>

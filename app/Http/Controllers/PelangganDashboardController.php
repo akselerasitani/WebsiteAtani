@@ -8,7 +8,7 @@ class PelangganDashboardController extends Controller
 {
     public function index()
     {
-        return view('Pelanggan.Dashboard.dashboard');
+        return view('Pelanggan.Page.Dashboard.dashboard');
     }
 
 }
