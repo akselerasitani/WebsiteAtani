@@ -9,26 +9,32 @@
 </head>
 
 <body>
-    <div class="card">
-        <div class="card-body">
-            @csrf
-            <form method="POST" action="">
-                <h3 class="text-center" style="color: #76AC5C">Data Toko</h3>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Nama Toko</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-8">
+                <div class="card " style="border-radius: 15px;">
+                    <div class="card-body">
+                        @csrf
+                        <form method="POST" action="">
+                            <h3 class="text-center" style="color: #76AC5C">Data Toko</h3>
+                            <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nama Toko</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1">Alamat Toko</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlFile1">Upload Akte Pendirian/SIUP/SITU</label>
+                                <input type="file" class="form-control" id="exampleFormControlFile1">
+                            </div>
+                            <button type="submit" class="form-control" style="background-color: #76AC5C; color:white">Kirim</button>
+                        </form>
+                        <p  class="text-center" style="margin-top: 20px">Sudah Mempunyai Akun? <a href="/masuk" style="text-decoration: none; color: black;"><b>Masuk</b></a></p>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1">Alamat Toko</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlFile1">Upload Akte Pendirian/SIUP/SITU</label><br>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                </div>
-                <button type="submit" class="form-control" style="background-color: #76AC5C; color:white">Kirim</button>
-            </form>
-            <p  class="text-center" style="margin-top: 20px">Sudah Mempunyai Akun? <a href="/masuk">Masuk</a></p>
+            </div>
         </div>
     </div>
 </body>

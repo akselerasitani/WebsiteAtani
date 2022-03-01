@@ -15,21 +15,21 @@
                     <ul class="menu">
 
                         <li class="sidebar-item active " style="background-color: #7F9B6E">
-                            <a href="" class='sidebar-link' style="background-color: #fff;">
+                            <a href="{{ route('dashboard.index') }}" class='sidebar-link' style="background-color: #fff;">
                                 <i class="bi bi-grid-fill" style="color: black;"></i>
                                 <span style="color: black">Dashboard</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item  ">
-                            <a href="" class='sidebar-link'>
+                            <a href="{{ route('order.index') }}" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill" style="color: white"></i>
                                 <span style="color: white">Order</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item  ">
-                            <a href="" class='sidebar-link'>
+                            <a href="{{ route('orderstatus.index') }}" class='sidebar-link'>
                                 <i class="bi bi-stack" style="color: white"></i>
                                 <span style="color: white">Status Order</span>
                             </a>

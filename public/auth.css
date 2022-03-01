@@ -1,0 +1,11 @@
+body {
+    background-image: url("images/bg-auth.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 7%;
+    height: auto;
+}
+
+
