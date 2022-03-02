@@ -22,15 +22,15 @@
     <link rel="stylesheet" href="{{asset('assetsdashboard/vendors/bootstrap-icons/bootstrap-icons.css')}}">
     <link rel="stylesheet" href="{{asset('assetsdashboard/css/app.css')}}">
     <link rel="shortcut icon" href="{{asset('assetsdashboard/images/favicon.svg')}}" type="image/x-icon">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body style="background-color: #f9fcf7">
     <div id="app">
         {{-- sidebar --}}
         @include('Pelanggan.Layout.sidebar')
-        <div id="main">
-            {{-- sidebar --}}
-            @include('Pelanggan.Layout.header')
-
+        {{-- sidebar --}}
+        @include('Pelanggan.Layout.header')
+        <div id="main">    
             {{-- content --}}
             @yield('content')
             

@@ -43,7 +43,7 @@
               <div class="card" style="background-color: #F5F5F5">
                 <img src="{{ asset('produk/' . $pr->foto_produk) }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">{{$pr->nama_produk}}</h5>
+                  <h5 class="card-title"><a href="{{route('order.detail', $pr->id)}}" style="color: black">{{$pr->nama_produk}}</a></h5>
                   <p class="card-text">Pupuk NPK Mutiara diklaim dapat menyuburkan keseluruhan dari tanaman, mulai dari daun, bunga, batang serta akar tanaman.</p>
                   <div class="row">
                     <div class="col">

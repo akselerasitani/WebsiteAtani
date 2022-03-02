@@ -1,17 +1,12 @@
 @extends('Pelanggan.master')
 
 @section('content')
+
             <div class="page-heading">
                 <div class="page-title">
                     <div class="row">
                         <div class="col-12 col-md-6 order-md-1 order-last">
-                        <h3>Welcome to Dashboard Toko Berkah Jaya</h3>
-                        </div>
-                        <div class="col-12 col-md-6 order-md-2 order-first">
-                            <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                                
-                                <span><b>Login sebagai : </b></span>
-                            </nav>
+                        <h3 style="color: #E27E05">Welcome to Dashboard Toko Berkah Jaya</h3>
                         </div>
                     </div>
                 </div>
@@ -24,14 +19,14 @@
                                 <div class="card">
                                     <div class="card-body px-3 py-4-5">
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="stats-icon purple">
-                                                    <i class="iconly-boldShow"></i>
-                                                </div>
-                                            </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold">Inventory</h6>
-                                                <h6 class="font-extrabold mb-0"></h6>
+                                                <h6 class="text-muted font-semibold" >Inventory</h6>
+                                                <h6 class="font-extrabold mb-0">{{$produk}}</h6>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="stats-icon">
+                                                    <img src="icon/inventory.png" class="card-img-top" alt="...">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -41,15 +36,15 @@
                                 <div class="card">
                                     <div class="card-body px-3 py-4-5">
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="stats-icon blue">
-                                                    <i class="iconly-boldProfile"></i>
-                                                </div>
-                                            </div>
                                             <div class="col-md-8">
                                                 <h6 class="text-muted font-semibold">Invoice</h6>
                                                 <h6 class="font-extrabold mb-0"></h6>
                                             </div>
+                                            <div class="col-md-4">
+                                                <div class="stats-icon">
+                                                    <img src="icon/invoice.png" class="card-img-top" alt="...">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -58,15 +53,15 @@
                                 <div class="card">
                                     <div class="card-body px-3 py-4-5">
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="stats-icon green">
-                                                    <i class="iconly-boldAdd-User"></i>
-                                                </div>
-                                            </div>
                                             <div class="col-md-8">
                                                 <h6 class="text-muted font-semibold">Best Seller</h6>
                                                 <h6 class="font-extrabold mb-0"></h6>
                                             </div>
+                                            <div class="col-md-4">
+                                            <div class="stats-icon">
+                                                    <img src="icon/best.png" class="card-img-top" alt="...">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -75,14 +70,14 @@
                                 <div class="card">
                                     <div class="card-body px-3 py-4-5">
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="stats-icon red">
-                                                    <i class="iconly-boldBookmark"></i>
-                                                </div>
-                                            </div>
                                             <div class="col-md-8">
                                                 <h6 class="text-muted font-semibold">History</h6>
                                                 <h6 class="font-extrabold mb-0"></h6>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="stats-icon">
+                                                    <img src="icon/history.png" class="card-img-top" alt="...">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
