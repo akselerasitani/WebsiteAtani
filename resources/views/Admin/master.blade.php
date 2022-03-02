@@ -13,7 +13,7 @@
 	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
     <link rel="stylesheet" href="{{asset('assetsdashboard/vendors/bootstrap-icons/bootstrap-icons.css')}}">
 
-	<title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+	<title>Admin - A - Tani</title>
 
 	<link href="{{asset('assetsadmin/css/app.css')}}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">

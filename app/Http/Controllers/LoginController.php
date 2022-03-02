@@ -21,7 +21,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($kredensil)) {
             $user = Auth::User();
-            $request->session()->put('name', $user);
+            $request->session()->put('user', $user);
             return redirect(route('dashboard.index'));
         } 
         else{
