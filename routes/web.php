@@ -8,6 +8,8 @@ use App\Http\Controllers\PelangganDashboardController;
 use App\Http\Controllers\PelangganProdukController;
 use App\Http\Controllers\PelangganOrderStatusController;
 
+use App\Http\Controllers\Admin\DashboardController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,5 +49,12 @@ Route::prefix('/')->group(function () {
         Route::get('/detail', [PelangganOrderStatusController::class, 'detail'])->name('detail')->middleware('auth');
     });
     
+    
+}); 
+
+Route::prefix('/admin')->group(function () {
+    Route::prefix('/')->name('index.')->group(function () {
+        Route::get('/', [DashboardController::class, 'index'])->name('index');
+    });
     
 }); 

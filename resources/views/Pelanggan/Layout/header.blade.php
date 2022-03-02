@@ -1,11 +1,10 @@
 <header class="mb-3">
     
-<nav class="navbar navbar-expand-sm " style="background-color: #7F9B6E; padding: 0px; height: 60%;">
+<nav class="navbar navbar-expand-sm " style="background-color: #7F9B6E; padding: 0px; height: 4rem;">
   <div class="container-fluid" >
-    <a class="navbar-brand" href="javascript:void(0)"><img src="{{asset('images/logo-atani-horizontal.png')}}" alt="Logo" srcset="" style="width: 100%; height: 100%"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="burger-btn d-flex align-items-center " href="#" style=" margin-left: 10px; width: 25px; height: 25px">
+        <i class="bi bi-justify" style="color: white; font-size: 24px; margin-top:-10px"></i>
+    </a>
     <div class="collapse navbar-collapse row" id="mynavbar" >
         <div class="col-lg-8"></div>
         <div class="col-lg-4 d-flex justify-content-end" style="padding:0px">
