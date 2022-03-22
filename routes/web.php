@@ -9,6 +9,10 @@ use App\Http\Controllers\PelangganProdukController;
 use App\Http\Controllers\PelangganOrderStatusController;
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ProdukController;
+use App\Http\Controllers\Admin\KategoriController;
+use App\Http\Controllers\Admin\PelangganController;
+use App\Http\Controllers\Admin\LoginAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,9 +56,26 @@ Route::prefix('/')->group(function () {
     
 }); 
 
-Route::prefix('/admin')->group(function () {
-    Route::prefix('/')->name('index.')->group(function () {
-        Route::get('/', [DashboardController::class, 'index'])->name('index');
-    });
-    
-}); 
+Route::get('loginadmin', [LoginAdminController::class, 'loginadmin'])->name('loginadmin');
+Route::post('proses_loginadmin', [LoginAdminController::class, 'proses_loginadmin'])->name('proses_loginadmin');
+
+Route::get('logoutadmin', [LoginAdminController::class, 'logoutadmin'])->name('logoutadmin');
+
+    Route::prefix('/admin')->group(function () {
+        Route::prefix('/')->name('admin.')->group(function () {
+            Route::get('/', [DashboardController::class, 'index'])->name('index');
+        });
+
+        Route::prefix('/pelanggan')->name('pelanggan.')->group(function () {
+            Route::get('/', [PelangganController::class, 'index'])->name('index');
+        });
+
+        Route::prefix('/produk')->name('produk.')->group(function () {
+            Route::get('/', [ProdukController::class, 'index'])->name('index');
+        });
+
+        Route::prefix('/kategori')->name('kategori.')->group(function () {
+            Route::get('/', [KategoriController::class, 'index'])->name('index');
+        });
+        
+    }); 

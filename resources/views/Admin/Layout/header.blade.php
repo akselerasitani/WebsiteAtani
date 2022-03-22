@@ -74,7 +74,7 @@
 							
 
 							<a class="nav-link  d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-                                <img src="assetsadmin/img/avatars/avatar-3.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
+                                <img src="assetsadmin/img/avatars/avatar-3.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">{{session()->get('admin')->name}}</span>
                             </a>
 						</li>
 					</ul>

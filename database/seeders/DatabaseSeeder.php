@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\User;
+use App\Models\Admin;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         $user = [
             [
                 'name'      => 'admin',
-                'email'     => 'admin@admin.com',
+                'username'     => 'admin@admin.com',
                 'password'  => bcrypt('12345'),
             ]
             // [
@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder
         ];
 
         foreach ($user as $key => $value) {
-            User::create($value);
+            Admin::create($value);
         }
     }
 }
