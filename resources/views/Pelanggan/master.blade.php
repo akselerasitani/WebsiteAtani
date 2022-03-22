@@ -27,13 +27,14 @@
     <div id="app">
         {{-- sidebar --}}
         @include('Pelanggan.Layout.sidebar')
-        <div id="main">
-            {{-- sidebar --}}
-            @include('Pelanggan.Layout.header')
-
-            {{-- content --}}
-            @yield('content')
-            
+        
+        <div id="main">  
+            {{-- header --}}
+            @include('Pelanggan.Layout.header')  
+            <div style="padding: 2rem">  
+                {{-- content --}}
+                @yield('content')
+            </div>
         </div>
     </div>
     <script src="{{asset('assetsdashboard/vendors/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>

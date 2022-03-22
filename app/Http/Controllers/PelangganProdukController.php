@@ -11,7 +11,7 @@ class PelangganProdukController extends Controller
 {
     public function index() {
 
-        $produk = Produk::with(['kategori'])->paginate(10);
+        $produk = Produk::with(['kategori'])->paginate(6);
 
         return view('Pelanggan.Page.Produk.produk', compact('produk'));
     }

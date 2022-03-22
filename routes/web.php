@@ -1,11 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PelangganIndexController;
 use App\Http\Controllers\PelangganDashboardController;
 use App\Http\Controllers\PelangganProdukController;
 use App\Http\Controllers\PelangganOrderStatusController;
+
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ProdukController;
+use App\Http\Controllers\Admin\KategoriController;
+use App\Http\Controllers\Admin\PelangganController;
+use App\Http\Controllers\Admin\LoginAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,13 +25,14 @@ use App\Http\Controllers\PelangganOrderStatusController;
 |
 */
 
-Route::get('login', [AuthController::class, 'login'])->name('login');
-Route::post('proses_loginpelanggan', [AuthController::class, 'proses_loginpelanggan'])->name('proses_loginpelanggan');
+Route::get('login', [LoginController::class, 'login'])->name('login');
+Route::post('proses_loginpelanggan', [LoginController::class, 'proses_loginpelanggan'])->name('proses_loginpelanggan');
 
-Route::get('registerpelanggan', [AuthController::class, 'register'])->name('registerpelanggan');
-Route::post('proses_registerpelanggan', [AuthController::class, 'proses_registerpelanggan'])->name('proses_registerpelanggan');
+Route::get('registerpelanggan', [RegisterController::class, 'register'])->name('registerpelanggan');
+Route::post('proses_registerpelanggan', [RegisterController::class, 'proses_registerpelanggan'])->name('proses_registerpelanggan');
 
-Route::get('logoutpelanggan', [AuthController::class, 'logoutpelanggan'])->name('logoutpelanggan');
+Route::get('logoutpelanggan', [LoginController::class, 'logoutpelanggan'])->name('logoutpelanggan');
+
 
 Route::prefix('/')->group(function () {
     Route::prefix('/')->name('index.')->group(function () {
@@ -32,18 +40,42 @@ Route::prefix('/')->group(function () {
     });
 
     Route::prefix('/dashboard')->name('dashboard.')->group(function () {
-        Route::get('/', [PelangganDashboardController::class, 'index'])->name('index');
+        Route::get('/', [PelangganDashboardController::class, 'index'])->name('index')->middleware('auth');
     });
 
     Route::prefix('/order')->name('order.')->group(function () {
-        Route::get('/', [PelangganProdukController::class, 'index'])->name('index');
-        Route::get('/detail/{id}', [PelangganProdukController::class, 'detail'])->name('detail');
+        Route::get('/', [PelangganProdukController::class, 'index'])->name('index')->middleware('auth');
+        Route::get('/detail/{id}', [PelangganProdukController::class, 'detail'])->name('detail')->middleware('auth');
     });
     
     Route::prefix('/orderstatus')->name('orderstatus.')->group(function () {
-        Route::get('/', [PelangganOrderStatusController::class, 'index'])->name('index');
-        Route::get('/detail', [PelangganOrderStatusController::class, 'detail'])->name('detail');
+        Route::get('/', [PelangganOrderStatusController::class, 'index'])->name('index')->middleware('auth');
+        Route::get('/detail', [PelangganOrderStatusController::class, 'detail'])->name('detail')->middleware('auth');
     });
     
     
 }); 
+
+Route::get('loginadmin', [LoginAdminController::class, 'loginadmin'])->name('loginadmin');
+Route::post('proses_loginadmin', [LoginAdminController::class, 'proses_loginadmin'])->name('proses_loginadmin');
+
+Route::get('logoutadmin', [LoginAdminController::class, 'logoutadmin'])->name('logoutadmin');
+
+    Route::prefix('/admin')->group(function () {
+        Route::prefix('/')->name('admin.')->group(function () {
+            Route::get('/', [DashboardController::class, 'index'])->name('index');
+        });
+
+        Route::prefix('/pelanggan')->name('pelanggan.')->group(function () {
+            Route::get('/', [PelangganController::class, 'index'])->name('index');
+        });
+
+        Route::prefix('/produk')->name('produk.')->group(function () {
+            Route::get('/', [ProdukController::class, 'index'])->name('index');
+        });
+
+        Route::prefix('/kategori')->name('kategori.')->group(function () {
+            Route::get('/', [KategoriController::class, 'index'])->name('index');
+        });
+        
+    }); 

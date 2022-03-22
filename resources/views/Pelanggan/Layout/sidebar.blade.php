@@ -24,7 +24,7 @@
                         <li class="sidebar-item  ">
                             <a href="{{ route('order.index') }}" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill" style="color: white"></i>
-                                <span style="color: white">Order</span>
+                                <span style="color: white">Daftar Produk</span>
                             </a>
                         </li>
 
@@ -43,7 +43,7 @@
                         </li>
 
                         <li class="sidebar-item  ">
-                            <a href="" class='sidebar-link'>
+                            <a href="{{route('logoutpelanggan')}}" class='sidebar-link'>
                                 <i class="bi bi-box-arrow-in-left" style="color: white"></i>
                                 <span style="color: white">Logout</span>
                             </a>
