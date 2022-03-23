@@ -76,6 +76,11 @@ Route::get('logoutadmin', [LoginAdminController::class, 'logoutadmin'])->name('l
 
         Route::prefix('/kategori')->name('kategori.')->group(function () {
             Route::get('/', [KategoriController::class, 'index'])->name('index');
+            Route::get('/create', [KategoriController::class, 'create_view'])->name('create');
+            Route::post('/create', [KategoriController::class, 'create_process'])->name('create.process');
+            Route::get('/update/{id}', [KategoriController::class, 'update_view'])->name('update');
+            Route::post('/update/{id}', [KategoriController::class, 'update_process'])->name('update.process');
+            Route::get('/delete/{id}', [KategoriController::class, 'delete'])->name('delete');
         });
         
     }); 
