@@ -22,7 +22,7 @@
 														</div>
 													</div>
 												</div>
-												<h1 class="mt-1 mb-3"></h1>
+												<h3 class="mt-1 mb-3">{{$pelanggan}}</h3>
 											</div>
 										</div>
 									</div>
@@ -40,7 +40,7 @@
 														</div>
 													</div>
 												</div>
-												<h1 class="mt-1 mb-3"></h1>
+												<h3 class="mt-1 mb-3">{{$kategori}}</h3>
 											</div>
 										</div>
 									</div>
@@ -58,7 +58,7 @@
 														</div>
 													</div>
 												</div>
-												<h1 class="mt-1 mb-3"></h1>
+												<h3 class="mt-1 mb-3">{{$produk}}</h3>
 											</div>
 										</div>
 									</div>
@@ -76,7 +76,7 @@
 														</div>
 													</div>
 												</div>
-												<h1 class="mt-1 mb-3"></h1>
+												<h3 class="mt-1 mb-3">0</h3>
 											</div>
 										</div>
 									</div>

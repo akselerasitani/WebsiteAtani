@@ -7,6 +7,7 @@ use App\Http\Controllers\PelangganIndexController;
 use App\Http\Controllers\PelangganDashboardController;
 use App\Http\Controllers\PelangganProdukController;
 use App\Http\Controllers\PelangganOrderStatusController;
+use App\Http\Controllers\PelangganProfilController;
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProdukController;
@@ -53,7 +54,9 @@ Route::prefix('/')->group(function () {
         Route::get('/detail', [PelangganOrderStatusController::class, 'detail'])->name('detail')->middleware('auth');
     });
     
-    
+    Route::prefix('/profil')->name('profil.')->group(function () {
+        Route::get('/', [PelangganProfilController::class, 'index'])->name('index')->middleware('auth');
+    });
 }); 
 
 Route::get('loginadmin', [LoginAdminController::class, 'loginadmin'])->name('loginadmin');
