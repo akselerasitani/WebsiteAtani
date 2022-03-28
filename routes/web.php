@@ -60,7 +60,6 @@ Route::get('loginadmin', [LoginAdminController::class, 'loginadmin'])->name('log
 Route::post('proses_loginadmin', [LoginAdminController::class, 'proses_loginadmin'])->name('proses_loginadmin');
 
 Route::get('logoutadmin', [LoginAdminController::class, 'logoutadmin'])->name('logoutadmin');
-
     Route::prefix('/admin')->group(function () {
         Route::prefix('/')->name('admin.')->group(function () {
             Route::get('/', [DashboardController::class, 'index'])->name('index');
@@ -72,6 +71,12 @@ Route::get('logoutadmin', [LoginAdminController::class, 'logoutadmin'])->name('l
 
         Route::prefix('/produk')->name('produk.')->group(function () {
             Route::get('/', [ProdukController::class, 'index'])->name('index');
+            Route::get('/create', [ProdukController::class, 'create_view'])->name('create');
+            Route::post('/create', [ProdukController::class, 'create_process'])->name('create.process');
+            Route::get('/view/{id}', [ProdukController::class, 'view'])->name('view');
+            Route::get('/update/{id}', [ProdukController::class, 'update_view'])->name('update');
+            Route::post('/update/{id}', [ProdukController::class, 'update_process'])->name('update.process');
+            Route::get('/delete/{id}', [ProdukController::class, 'delete'])->name('delete');
         });
 
         Route::prefix('/kategori')->name('kategori.')->group(function () {
@@ -82,5 +87,4 @@ Route::get('logoutadmin', [LoginAdminController::class, 'logoutadmin'])->name('l
             Route::post('/update/{id}', [KategoriController::class, 'update_process'])->name('update.process');
             Route::get('/delete/{id}', [KategoriController::class, 'delete'])->name('delete');
         });
-        
     }); 
