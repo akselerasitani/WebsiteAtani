@@ -21,10 +21,7 @@
     <h4 style="color: #77AC5C">{{$produk->nama_produk}}</h4>
       <div class="row">
         <div class="col">
-          Terjual 790
-        </div>
-        <div class="col" style="margin-left: -500px">
-          200 Ulasan
+          Terjual 790 | 200 Ulasan
         </div>
       </div>
 

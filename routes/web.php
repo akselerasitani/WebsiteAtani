@@ -34,6 +34,7 @@ Route::post('proses_registerpelanggan', [RegisterController::class, 'proses_regi
 
 Route::get('logoutpelanggan', [LoginController::class, 'logoutpelanggan'])->name('logoutpelanggan');
 
+Route::get('/orderstatusdetail', [PelangganOrderStatusController::class, 'orderstatusdetail']);
 
 Route::prefix('/')->group(function () {
     Route::prefix('/')->name('index.')->group(function () {

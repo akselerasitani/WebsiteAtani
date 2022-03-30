@@ -12,19 +12,29 @@
 
 <div class="card">
     <div class="card-body">
-        <div id="stepper">
-
+        <div class="row">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 offset-md-2 block border">
+                  <div class="wrapper-progressBar">
+                    <ul class="progressBar">
+                      <li class="active">Being Processed</li>
+                      <li class="active">Waiting for payment</li>
+                      <li>Paid</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>              
         </div>
-
+        <br>
         <div id="pesanan">
             <div class="row">
                 <div class="col">
                     <h5 style="color: #E27E05">No Pesanan 2110162K6W26JK</h5>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-sm-2">
                     <button type="button" class="btn btn-light" style="background-color:#77AC5C; color: white; margin-left: 10px">Hubungi Penjual</button>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-sm-2">
                     <button type="button" class="btn btn-light" style="background-color: #E27E05; color: white;">Batalkan Pesanan</button>
                 </div>
             </div>
@@ -74,5 +84,64 @@
             </div>
         </div>
     </div>
+
+    <style>
+        .wrapper-progressBar {
+            width: 100%
+        }
+
+        .progressBar {
+        }
+
+        .progressBar li {
+            list-style-type: none;
+            float: left;
+            width: 33%;
+            position: relative;
+            text-align: center;
+        }
+
+        .progressBar li:before {
+            content: " ";
+            line-height: 30px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ddd;
+            display: block;
+            text-align: center;
+            margin: 0 auto 10px;
+            background-color: white
+        }
+
+        .progressBar li:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #ddd;
+            top: 15px;
+            left: -50%;
+            z-index: -1;
+        }
+
+        .progressBar li:first-child:after {
+            content: none;
+        }
+
+        .progressBar li.active {
+            color: dodgerblue;
+        }
+
+        .progressBar li.active:before {
+            border-color: dodgerblue;
+            background-color: dodgerblue;
+        }
+
+        .progressBar .active:after {
+            background-color: dodgerblue;
+        }
+    </style>
+    
 </div>
 @endsection
