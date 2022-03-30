@@ -22,8 +22,8 @@
                     <a href="#" class="nav-item nav-link" style="color:#499026;">Tentang Kami</a>
                     <a href="#" class="nav-item nav-link" style="color:#499026;">Produk</a>
                     <a href="#" class="nav-item nav-link" style="color:#499026;">Manfaat</a>
-                    <a type="button" class="btn btn-outline-success" style="background-color: #fff; margin-right: 10px">Masuk</a>
-                    <a type="button" class="btn" style="background-color:#499026; color:#fff">Daftar</a>
+                    <a type="button" class="btn btn-outline-success" style="background-color: #fff; margin-right: 10px" href="login">Masuk</a>
+                    <a type="button" class="btn" style="background-color:#499026; color:#fff" href="">Daftar</a>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Admin;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,7 +18,7 @@ class DatabaseSeeder extends Seeder
         $user = [
             [
                 'name'      => 'admin',
-                'username'     => 'admin@admin.com',
+                'email'     => 'admin@admin.com',
                 'password'  => bcrypt('12345'),
             ]
             // [
@@ -39,7 +40,7 @@ class DatabaseSeeder extends Seeder
         ];
 
         foreach ($user as $key => $value) {
-            Admin::create($value);
+            User::create($value);
         }
     }
 }

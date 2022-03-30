@@ -1,5 +1,5 @@
         <div id="sidebar" class="active">
-            <div class="sidebar-wrapper active" style="background-color: #7F9B6E">
+            <div class="sidebar-wrapper active" style="background-color: #76AC5C">
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo" style="width: 1000px;">
