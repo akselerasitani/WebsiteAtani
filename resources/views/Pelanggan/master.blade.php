@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{asset('assetsdashboard/vendors/perfect-scrollbar/perfect-scrollbar.css')}}">
     <link rel="stylesheet" href="{{asset('assetsdashboard/vendors/bootstrap-icons/bootstrap-icons.css')}}">
     <link rel="stylesheet" href="{{asset('assetsdashboard/css/app.css')}}">
-    <link rel="shortcut icon" href="{{asset('assetsdashboard/images/favicon.svg')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('logoatas.png')}}" type="image/x-icon">
 </head>
 <body style="background-color: #f9fcf7">
     <div id="app">

@@ -3,7 +3,7 @@
 </style>
 <header class="mb-3" style="margin-left: 0px">
     
-<nav class="navbar navbar-expand-sm " style="background-color: #7F9B6E; padding: 0px; height: 4rem;">
+<nav class="navbar navbar-expand-sm " style="background-color: #76AC5C; padding: 0px; height: 4rem;">
   <div class="container-fluid" >
     <a class="burger-btn d-flex align-items-center " href="#" style=" margin-left: 10px; width: 25px; height: 25px;">
         <i class="hamburger" style="color: white; font-size: 24px;"></i>
@@ -18,7 +18,7 @@
             <a class="nav-link d-flex align-items-center justify-content-center " href="#" style="padding: 8px 4px">
                 <img src="icon/notif.png" width="20px"  />
             </a>
-            <a class="nav-link  d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+            <a class="nav-link  d-none d-sm-inline-block" href="{{ route('profil.index') }}">
                 <img src="icon/profile.png" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span style="color: white; font-weight: bold">{{session()->get('user')->name}}</span>
             </a>
 			
