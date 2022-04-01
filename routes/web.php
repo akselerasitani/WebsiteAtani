@@ -8,6 +8,7 @@ use App\Http\Controllers\PelangganDashboardController;
 use App\Http\Controllers\PelangganProdukController;
 use App\Http\Controllers\PelangganOrderStatusController;
 use App\Http\Controllers\PelangganProfilController;
+use App\Http\Controllers\OmzetPelangganController;
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProdukController;
@@ -35,6 +36,8 @@ Route::post('proses_registerpelanggan', [RegisterController::class, 'proses_regi
 Route::get('logoutpelanggan', [LoginController::class, 'logoutpelanggan'])->name('logoutpelanggan');
 
 Route::get('/orderstatusdetail', [PelangganOrderStatusController::class, 'orderstatusdetail']);
+
+Route::get('/omzetpenjualan', [OmzetPelangganController::class, 'index']);
 
 Route::prefix('/')->group(function () {
     Route::prefix('/')->name('index.')->group(function () {

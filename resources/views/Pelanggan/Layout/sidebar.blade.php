@@ -36,7 +36,7 @@
                         </li>
 
                         <li class="sidebar-item  ">
-                            <a href="" class='sidebar-link'>
+                            <a href="/omzetpenjualan" class='sidebar-link'>
                                 <i class="bi bi-bar-chart-fill" style="color: white"></i>
                                 <span style="color: white">Omzet Penjualan</span>
                             </a>
