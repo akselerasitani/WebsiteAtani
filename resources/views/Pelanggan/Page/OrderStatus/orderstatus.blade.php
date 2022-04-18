@@ -29,7 +29,7 @@
                     <td>12345678</td>
                     <td>Rp. 550.000</td>
                     <td>Approved</td>
-                    <td><button type="button" class="btn btn-outline-light" style="color: white; background-color: #E27E05"><a href="/orderstatusdetail">Detail Status</a></button></td>
+                    <td><button type="button" class="btn btn-outline-light" style="background-color: #E27E05"><a href="/orderstatusdetail" style="color: white">Detail Status</a></button></td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
@@ -37,7 +37,7 @@
                     <td>12345678</td>
                     <td>Rp. 550.000</td>
                     <td>Pending</td>
-                    <td><button type="button" class="btn btn-outline-light" style="color: white; background-color: #E27E05"><a href="/orderstatusdetail">Detail Status</a></button></td>
+                    <td><button type="button" class="btn btn-outline-light" style="background-color: #E27E05"><a href="/orderstatusdetail" style="color: white">Detail Status</a></button></td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
@@ -45,7 +45,7 @@
                     <td>12345678</td>
                     <td>Rp. 550.000</td>
                     <td>Done</td>
-                    <td><button type="button" class="btn btn-outline-light" style="color: white; background-color: #E27E05"><a href="/orderstatusdetail">Detail Status</a></button></td>
+                    <td><button type="button" class="btn btn-outline-light" style="background-color: #E27E05"><a href="/orderstatusdetail" style="color: white">Detail Status</a></button></td>
                 </tr>
                 <tr>
                     <th scope="row">4</th>
@@ -53,7 +53,7 @@
                     <td>12345678</td>
                     <td>Rp. 550.000</td>
                     <td>Send</td>
-                    <td><button type="button" class="btn btn-outline-light" style="color: white; background-color: #E27E05"><a href="/orderstatusdetail">Detail Status</a></button></td>
+                    <td><button type="button" class="btn btn-outline-light" style="background-color: #E27E05"><a href="/orderstatusdetail" style="color: white">Detail Status</a></button></td>
                 </tr>
             </tbody>
         </table>

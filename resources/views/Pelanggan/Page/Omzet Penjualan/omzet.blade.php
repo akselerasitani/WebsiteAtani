@@ -1,11 +1,20 @@
-@extends('Pelanggan.master')
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Laravel Chart</title>
+    </head>
+    <body>
+        <div style="width: 80%;margin: 0 auto;">
+            {!! $chart->container() !!}
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js" charset="utf-8"></script>
+        {!! $chart->script() !!}
+    </body>
+</html>
+</pre>
 
-@section('content')
-
-<h4 style="text-align: left">Rp. 13.550.400</h4>
-<p style="color: rgb(25, 126, 25); text-align: left">+1009.28 (7.53%)</p>
-
-<div class="row">
+{{-- <div class="row">
     <div class="col">
         <div class="chart" style="width: 550px">
             <div>
@@ -75,5 +84,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection

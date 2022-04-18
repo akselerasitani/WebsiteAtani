@@ -39,6 +39,8 @@ Route::get('/orderstatusdetail', [PelangganOrderStatusController::class, 'orders
 
 Route::get('/omzetpenjualan', [OmzetPelangganController::class, 'index']);
 
+Route::get('chart', 'ChartController@index');
+
 Route::prefix('/')->group(function () {
     Route::prefix('/')->name('index.')->group(function () {
         Route::get('/', [PelangganIndexController::class, 'index'])->name('index');
