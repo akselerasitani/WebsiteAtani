@@ -37,6 +37,8 @@ Route::get('logoutpelanggan', [LoginController::class, 'logoutpelanggan'])->name
 
 Route::get('/orderstatusdetail', [PelangganOrderStatusController::class, 'orderstatusdetail']);
 
+Route::get('/invoice', [PelangganOrderStatusController::class, 'invoice']);
+
 Route::get('/omzetpenjualan', [OmzetPelangganController::class, 'index']);
 
 Route::get('chart', 'ChartController@index');

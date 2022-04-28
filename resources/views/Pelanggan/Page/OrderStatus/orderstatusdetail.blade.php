@@ -13,73 +13,120 @@
 <div class="card">
     <div class="card-body">
         <div class="row">
-            <div class="col-xs-12 col-md-8 offset-md-2 block border">
-              <div class="wrapper-progressBar">
-                <ul class="progressBar">
-                  <li class="active">Beong Processed</li>
-                  <li class="active">Waiting for payment</li>
-                  <li>Paid</li>
+            <div class="progress-track">
+                <ul id="progressbar">
+                    <li class="step0 active" id="step1">Pesanan diterima</li>
+                    <li class="step0 active text-center" id="step2">Pesanan diproses</li>
+                    <li class="step0 text-right" id="step3">Pesanan dikirim</li>
+                    <li class="step0 text-right" id="step4">Pesanan selesai</li>
                 </ul>
-              </div>
             </div>
         </div>
 
         <style>
-            .wrapper-progressBar {
-                width: 100%
-            }
+        #progressbar {
+            margin-bottom: 3vh;
+            overflow: hidden;
+            color: #75AA5B;
+            padding-left: 0px;
+            margin-top: 3vh
+        }
 
-            .progressBar {
-            }
+        #progressbar li {
+            list-style-type: none;
+            font-size: x-small;
+            width: 25%;
+            float: left;
+            position: relative;
+            font-weight: 400;
+            color: rgb(160, 159, 159)
+        }
 
-            .progressBar li {
-                list-style-type: none;
-                float: left;
-                width: 33%;
-                position: relative;
-                text-align: center;
-            }
+        #progressbar #step1:before {
+            content: "";
+            color: #75AA5B;
+            width: 10px;
+            height: 10px;
+            margin-left: 0px !important
+        }
 
-            .progressBar li:before {
-                content: " ";
-                line-height: 30px;
-                border-radius: 50%;
-                width: 30px;
-                height: 30px;
-                border: 1px solid #ddd;
-                display: block;
-                text-align: center;
-                margin: 0 auto 10px;
-                background-color: white
-            }
+        #progressbar #step2:before {
+            content: "";
+            color: #fff;
+            width: 10px;
+            height: 10px;
+            margin-left: 32%
+        }
 
-            .progressBar li:after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 4px;
-                background-color: #ddd;
-                top: 15px;
-                left: -50%;
-                z-index: -1;
-            }
+        #progressbar #step3:before {
+            content: "";
+            color: #fff;
+            width: 10px;
+            height: 10px;
+            margin-right: 32%
+        }
 
-            .progressBar li:first-child:after {
-                content: none;
-            }
+        #progressbar #step4:before {
+            content: "";
+            color: #fff;
+            width: 10px;
+            height: 10px;
+            margin-right: 0px !important
+        }
 
-            .progressBar li.active {
-                color: dodgerblue;
-            }
+        #progressbar li:before {
+            line-height: 29px;
+            display: block;
+            font-size: 12px;
+            background: #ddd;
+            border-radius: 50%;
+            margin: auto;
+            z-index: -1;
+            margin-bottom: 1vh
+        }
 
-            .progressBar li.active:before {
-                border-color: dodgerblue;
-                background-color: dodgerblue
-            }
+        #progressbar li:after {
+            content: '';
+            height: 2px;
+            background: #ddd;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            margin-bottom: 2vh;
+            top: 1px;
+            z-index: 1
+        }
 
-            .progressBar .active:after {
-                background-color: dodgerblue;
-            }
+        .progress-track {
+            padding: 0 5%
+        }
+
+        #progressbar li:nth-child(2):after {
+            margin-right: auto
+        }
+
+        #progressbar li:nth-child(1):after {
+            margin: auto
+        }
+
+        #progressbar li:nth-child(3):after {
+            float: left;
+            width: 68%
+        }
+
+        #progressbar li:nth-child(4):after {
+            margin-left: auto;
+            width: 132%
+        }
+
+        #progressbar li.active {
+            color: black
+        }
+
+        #progressbar li.active:before,
+        #progressbar li.active:after {
+            background: #75AA5B
+        }
         </style>
 
         <br>
@@ -111,9 +158,9 @@
         <div id="produk detail" style="margin-top: 50px">
             <div class="row">
                 <div class="col">
-                    <img src="images/npk.png" width="150px" height="150px">
+                    <img src="fotoproduk/npk.jpg" width="250px" height="200px">
                 </div>
-                <div class="col" style="margin-left: -300px">
+                <div class="col">
                     <h5 style="color: #77AC5C">Pupuk NPK Mutiara</h5>
                     <p>Jenis: Super</p>
                     <p>x1</p>
