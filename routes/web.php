@@ -8,6 +8,8 @@ use App\Http\Controllers\PelangganDashboardController;
 use App\Http\Controllers\PelangganProdukController;
 use App\Http\Controllers\PelangganOrderStatusController;
 use App\Http\Controllers\PelangganProfilController;
+use App\Http\Controllers\PelangganOmzetController;
+use App\Http\Controllers\PelangganInvoiceController;
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProdukController;
@@ -34,6 +36,9 @@ Route::post('proses_registerpelanggan', [PelangganRegisterController::class, 'pr
 
 Route::get('logoutpelanggan', [LoginController::class, 'logoutpelanggan'])->name('logoutpelanggan');
 
+Route::get('/orderstatusdetail', [PelangganOrderStatusController::class, 'orderstatusdetail']);
+
+Route::get('/invoice', [PelangganInvoiceController::class, 'invoice']);
 
 Route::prefix('/')->group(function () {
     Route::prefix('/')->name('index.')->group(function () {
