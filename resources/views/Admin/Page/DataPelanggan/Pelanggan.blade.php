@@ -38,11 +38,18 @@
 											<td>{{$no}}</td>
 											<td class=" d-xl-table-cell">{{$pl->name}}</td>
 											<td class="d-none d-xl-table-cell">{{$pl->email}}</td>
-											<td class=" d-md-table-cell">Vanessa Tucker</td>
-											<td><span class="badge bg-success">Toko Aktif</span></td>
+											<td class=" d-md-table-cell">{{$pl->toko}}</td>
+											<td><span class="badge bg-success">{{$pl->status}}</span></td>
                                             <td class="d-none d-xl-table-cell">
                                                 <a href="" class="btn btn-primary"><i class="align-middle" data-feather="file-text" style="margin-right: 10px"></i>Detail</a>
-                                                <a href="" class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="align-middle" data-feather="trash-2" style="margin-right: 10px"></i>Hapus</a>
+                                                <?php
+                                                    if($pl->status == 'Belum Aktif')
+                                                    {
+                                                ?>
+                                                    <a href="{{route('pelanggan.update', $pl->id)}}" class="btn btn-danger" ><i class="align-middle" data-feather="power" style="margin-right: 10px"></i>Aktifkan</a>
+                                                <?php
+                                                    }
+                                                ?>
                                             </td>
 										</tr>
 										@endforeach

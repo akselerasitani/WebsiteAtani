@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\PelangganRegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PelangganIndexController;
 use App\Http\Controllers\PelangganDashboardController;
@@ -29,8 +29,8 @@ use App\Http\Controllers\Admin\LoginAdminController;
 Route::get('login', [LoginController::class, 'login'])->name('login');
 Route::post('proses_loginpelanggan', [LoginController::class, 'proses_loginpelanggan'])->name('proses_loginpelanggan');
 
-Route::get('registerpelanggan', [RegisterController::class, 'register'])->name('registerpelanggan');
-Route::post('proses_registerpelanggan', [RegisterController::class, 'proses_registerpelanggan'])->name('proses_registerpelanggan');
+Route::get('registerpelanggan', [PelangganRegisterController::class, 'registerpelanggan'])->name('registerpelanggan');
+Route::post('proses_registerpelanggan', [PelangganRegisterController::class, 'proses_registerpelanggan'])->name('proses_registerpelanggan');
 
 Route::get('logoutpelanggan', [LoginController::class, 'logoutpelanggan'])->name('logoutpelanggan');
 
@@ -70,6 +70,7 @@ Route::get('logoutadmin', [LoginAdminController::class, 'logoutadmin'])->name('l
 
         Route::prefix('/pelanggan')->name('pelanggan.')->group(function () {
             Route::get('/', [PelangganController::class, 'index'])->name('index');
+            Route::get('/update/{id}', [PelangganController::class, 'update'])->name('update');
         });
 
         Route::prefix('/produk')->name('produk.')->group(function () {

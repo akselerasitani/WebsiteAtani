@@ -15,4 +15,16 @@ class PelangganController extends Controller
 
         return view('Admin.Page.DataPelanggan.Pelanggan', compact('pelanggan'));
     }
+
+    public function update($id)
+    {
+        
+        $user = User::find($id);
+
+        $user->status     = 'Aktif';
+        $user->save();
+
+        return redirect(route('pelanggan.index'))->with(['success' => 'Account Berhasil di Aktifkan']);
+    }
+
 }

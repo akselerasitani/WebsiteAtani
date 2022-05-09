@@ -16,15 +16,14 @@ class DatabaseSeeder extends Seeder
     {
         $user = [
             [
-                'name'      => 'admin',
-                'email'     => 'admin@admin.com',
-                'password'  => bcrypt('12345'),
-            ],
-            [
                 'name'      => 'tiara',
-                'email'     => 'tiara@admin.com',
-                'password'  => bcrypt('tiara'),
-            ]
+                'email'     => 'tiara@tiara.com',
+                'password'  =>  bcrypt('12345'),
+                'telepon'   => '081332496225',
+                'alamat'    => 'sidoarjo',
+                'foto'      => 'tiara.png',
+                'toko'      => 'cv. maju makmur',
+            ],
         ];
 
         foreach ($user as $key => $value) {
