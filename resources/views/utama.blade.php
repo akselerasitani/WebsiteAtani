@@ -93,22 +93,22 @@
                     <div class="col text-center">
                         <img src="images/harga.png" width="150" height="160" class="d-inline" style="" alt="">
                         <h6 style="color: #fff">Harga produk lebih stabil</h6>
-                        <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p style="color: #fff">Kami menawarkan harga produk yang lebih stabil kepada para toko tani.</p>
                     </div>
                     <div class="col text-center">
                         <img src="images/pembayaran.png" width="150" height="160" class="d-inline" style="" alt="">
                         <h6 style="color: #fff">Pembayaran diakhir (Pay-Later)</h6>
-                        <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p style="color: #fff">Kami memberikan penawaran pembayaran di akhir.</p>
                     </div>
                     <div class="col text-center">
                         <img src="images/jaminan.png" width="150" height="160" class="d-inline" style="" alt="">
                         <h6 style="color: #fff">Jaminan kualitas produk</h6>
-                        <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p style="color: #fff">Kami menjamin kualitas produk kami sesuai dengan standar.</p>
                     </div>
                     <div class="col text-center">
                         <img src="images/branding.png" width="150" height="160" class="d-inline" style="" alt="">
                         <h6 style="color: #fff">Branding Toko Gratis</h6>
-                        <p style="color: #fff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p style="color: #fff">Kami juga menyediakan jasa branding para toko tani secara gratis dalam website.</p>
                     </div>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
             <h5> Anda kesulitan ketika ingin membeli produk?<br>Produk di toko anda langka dan terbatas?<br>Harga produk anda selama ini tidak stabil?</h5>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <a class="cta-btn align-middle" href="#">Mari Bergabung</a>
           </div>
         </div>
 

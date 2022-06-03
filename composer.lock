@@ -737,7 +737,7 @@
             "time": "2021-11-21T21:41:47+00:00"
         },
         {
-            "name": "guzzlehttp/guzzle",
+            "name": "guzzlehttps/guzzle",
             "version": "7.4.2",
             "source": {
                 "type": "git",
@@ -752,19 +752,19 @@
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^1.5",
-                "guzzlehttp/psr7": "^1.8.3 || ^2.1",
+                "guzzlehttps/promises": "^1.5",
+                "guzzlehttps/psr7": "^1.8.3 || ^2.1",
                 "php": "^7.2.5 || ^8.0",
-                "psr/http-client": "^1.0",
+                "psr/https-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.2 || ^3.0"
             },
             "provide": {
-                "psr/http-client-implementation": "1.0"
+                "psr/https-client-implementation": "1.0"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-curl": "*",
-                "php-http/client-integration-tests": "^3.0",
+                "php-https/client-integration-tests": "^3.0",
                 "phpunit/phpunit": "^8.5.5 || ^9.3.5",
                 "psr/log": "^1.1 || ^2.0 || ^3.0"
             },
@@ -784,7 +784,7 @@
                     "src/functions_include.php"
                 ],
                 "psr-4": {
-                    "GuzzleHttp\\": "src/"
+                    "GuzzleHttps\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -833,8 +833,8 @@
                 "client",
                 "curl",
                 "framework",
-                "http",
-                "http client",
+                "https",
+                "https client",
                 "psr-18",
                 "psr-7",
                 "rest",
@@ -854,14 +854,14 @@
                     "type": "github"
                 },
                 {
-                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/guzzle",
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttps/guzzle",
                     "type": "tidelift"
                 }
             ],
             "time": "2022-03-20T14:16:28+00:00"
         },
         {
-            "name": "guzzlehttp/promises",
+            "name": "guzzlehttps/promises",
             "version": "1.5.1",
             "source": {
                 "type": "git",
@@ -938,14 +938,14 @@
                     "type": "github"
                 },
                 {
-                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/promises",
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttps/promises",
                     "type": "tidelift"
                 }
             ],
             "time": "2021-10-22T20:56:57+00:00"
         },
         {
-            "name": "guzzlehttp/psr7",
+            "name": "guzzlehttps/psr7",
             "version": "2.2.1",
             "source": {
                 "type": "git",
@@ -960,17 +960,17 @@
             },
             "require": {
                 "php": "^7.2.5 || ^8.0",
-                "psr/http-factory": "^1.0",
-                "psr/http-message": "^1.0",
+                "psr/https-factory": "^1.0",
+                "psr/https-message": "^1.0",
                 "ralouphie/getallheaders": "^3.0"
             },
             "provide": {
-                "psr/http-factory-implementation": "1.0",
-                "psr/http-message-implementation": "1.0"
+                "psr/https-factory-implementation": "1.0",
+                "psr/https-message-implementation": "1.0"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.4.1",
-                "http-interop/http-factory-tests": "^0.9",
+                "https-interop/https-factory-tests": "^0.9",
                 "phpunit/phpunit": "^8.5.8 || ^9.3.10"
             },
             "suggest": {
@@ -984,7 +984,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
+                    "GuzzleHttps\\Psr7\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1030,7 +1030,7 @@
             ],
             "description": "PSR-7 message implementation that also provides common utility methods",
             "keywords": [
-                "http",
+                "https",
                 "message",
                 "psr-7",
                 "request",
@@ -1053,7 +1053,7 @@
                     "type": "github"
                 },
                 {
-                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttps/psr7",
                     "type": "tidelift"
                 }
             ],
@@ -1115,7 +1115,7 @@
                 }
             ],
             "description": "PHP wrapper library for the Google Chart API",
-            "homepage": "http://lavacharts.com",
+            "homepage": "https://lavacharts.com",
             "keywords": [
                 "charts",
                 "google",
@@ -1124,7 +1124,7 @@
                 "symfony"
             ],
             "support": {
-                "docs": "http://lavacharts.com",
+                "docs": "https://lavacharts.com",
                 "email": "kevinkhill@gmail.com",
                 "forum": "https://gitter.im/kevinkhill/lavacharts",
                 "issues": "https://github.com/kevinkhill/lavacharts/issues",
@@ -6607,7 +6607,7 @@
                 {
                     "name": "Konstantin Kudryashov",
                     "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
+                    "homepage": "https://everzet.com"
                 },
                 {
                     "name": "Marcello Duarte",
@@ -7460,7 +7460,7 @@
                 }
             ],
             "description": "Provides functionality to handle HHVM/PHP environments",
-            "homepage": "http://www.github.com/sebastianbergmann/environment",
+            "homepage": "https://www.github.com/sebastianbergmann/environment",
             "keywords": [
                 "Xdebug",
                 "environment",
