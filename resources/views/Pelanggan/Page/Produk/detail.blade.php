@@ -85,7 +85,7 @@
     <div class="row" style="margin-top: 20px;">
       <div class="d-flex justify-content-center">
         <button type="button" class="btn btn-light" style="background-color:#E27E05; color: white; width:100%; margin-right: 10px;margin-left: 10px;">Add to Cart</button>
-        <button type="button" class="btn btn-light" style="background-color: #77AC5C; color: white;  width:100%; margin-right: 10px;margin-left: 10px;">Order Now</button>
+        <button type="button" class="btn btn-light" style="background-color: #77AC5C; color: white;  width:100%; margin-right: 10px;margin-left: 10px;"><a href="/checkout">Order Now</a></button>
       </div>
     </div>
 

@@ -17,6 +17,11 @@ class ProdukController extends Controller
         return view('Admin.Page.DataProduk.Produk', compact('produk'));
     }
 
+    public function checkout()
+    {
+        return view('Pelanggan.Page.Produk.checkout');
+    }
+
     public function create_view()
     {
         $kategori = Kategori::all();

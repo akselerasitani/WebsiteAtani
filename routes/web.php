@@ -35,13 +35,16 @@ Route::post('proses_registerpelanggan', [RegisterController::class, 'proses_regi
 
 Route::get('logoutpelanggan', [LoginController::class, 'logoutpelanggan'])->name('logoutpelanggan');
 
+//order status
 Route::get('/orderstatusdetail', [PelangganOrderStatusController::class, 'orderstatusdetail']);
-
 Route::get('/invoice', [PelangganOrderStatusController::class, 'invoice']);
 
 Route::get('/omzetpenjualan', [OmzetPelangganController::class, 'index']);
 
-Route::get('chart', 'ChartController@index');
+//produk
+Route::get('/checkout', [ProdukController::class, 'checkout']);
+
+// Route::get('chart', 'ChartController@index');
 
 Route::prefix('/')->group(function () {
     Route::prefix('/')->name('index.')->group(function () {
