@@ -22,6 +22,11 @@ class ProdukController extends Controller
         return view('Pelanggan.Page.Produk.checkout');
     }
 
+    public function cart()
+    {
+        return view('Pelanggan.Page.Produk.cart');
+    }
+
     public function create_view()
     {
         $kategori = Kategori::all();

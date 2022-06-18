@@ -43,6 +43,7 @@ Route::get('/omzetpenjualan', [OmzetPelangganController::class, 'index']);
 
 //produk
 Route::get('/checkout', [ProdukController::class, 'checkout']);
+Route::get('/cart', [ProdukController::class, 'cart']);
 
 // Route::get('chart', 'ChartController@index');
 
